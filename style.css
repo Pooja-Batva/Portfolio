@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(3, 24, 44);
+    color: white;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(3, 24, 44);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav #logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav #navlinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav #navlinks a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 5rem;
+}
+
+.hero #hero-text {
+    width: 70%;
+    text-align: left;
+}
+
+.hero #hero-text h1 {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    gap : 10px;
+}
+
+.hero #hero-text h3 {
+    font-size: 30px;
+    color: white;
+}
+.hero #hero-text p {
+    font-size: 20px;
+    color: white;
+}
+
+.hero #hero-text span {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero #hero-text span a {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.hero #hero-text span a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.hero #hero-text span a img:hover{
+    transform: scale(1.1);
+    filter: brightness(300);
+    color : white;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .hero #hero-text span a:hover {
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+} */
+
+.hero #hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero #hero-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero #hero-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 5rem;
+}
